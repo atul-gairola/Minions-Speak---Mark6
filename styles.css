@@ -14,8 +14,8 @@ font-family: 'Ubuntu', sans-serif; */
   outline: none;
 }
 
-button{
-    cursor: pointer;
+button {
+  cursor: pointer;
 }
 
 body {
@@ -50,5 +50,10 @@ textarea {
   border: 1px solid #a87a51;
   border-radius: 5px;
   padding: 20px;
-  font-family: 'Gluten', cursive;
+  font-family: "Gluten", cursive;
+}
+
+.disable {
+  opacity: 0.5;
+  cursor: default;
 }
