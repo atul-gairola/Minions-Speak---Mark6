@@ -16,7 +16,7 @@ function setOutput(translation) {
 
 function handleError(err) {
   console.log(err);
-  alert("Some error occured while processing. Please try after sometime.");
+  alert("Only 5 conversion per hour are allowed. They have been exceded. Please try after 1 hour.");
 }
 
 function updateLoading(isLoading) {
