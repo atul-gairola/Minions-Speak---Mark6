@@ -16,17 +16,26 @@
         Convert english into minion tongue. Play around looking at what
         different words sound like.
       </p>
-      <div>
-        <label for="text">Text</label>
+      <div class="container" >
         <textarea
           name="text"
           id="text"
           cols="30"
-          rows="10"
+          rows="8"
           placeholder="Enter the text you want to convert"
         ></textarea>
+        <div>
+          <button id="convertButton">Convert</button>
+        </div>
+        <textarea
+          name="output"
+          id="output"
+          cols="30"
+          rows="8"
+          disabled
+          placeholder="What minions would say"
+        ></textarea>
       </div>
-      <div id="output"></div>
     </main>
     <footer>
       <p>
