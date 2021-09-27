@@ -14,6 +14,11 @@ function setOutput(translation) {
   output.value = translation;
 }
 
+function handleError(err) {
+  console.log(err);
+  alert("Some error occured while processing. Please try after sometime.");
+}
+
 function updateLoading(isLoading) {
   if (isLoading) {
     loading = true;
@@ -34,7 +39,6 @@ convertButton.addEventListener("click", () => {
   }
   updateLoading(true);
   const { value } = inputText;
-  console.log(value);
 
   fetch(constructURL(value))
     .then((response) => response.json())
@@ -44,7 +48,7 @@ convertButton.addEventListener("click", () => {
       updateLoading(false);
     })
     .catch((err) => {
-      console.log(err);
+      handleError(err);
       updateLoading(false);
     });
 });
